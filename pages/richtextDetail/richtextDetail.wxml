@@ -1,0 +1,10 @@
+<import src="../../wxParse/wxParse.wxml"/>
+
+<view>
+ 
+    <block wx:for="{{artileList}}" wx:key="item" wx:for-item="item" wx:for-index="idx">
+        
+        <template is="wxParse" data="{{wxParseData:item}}"/>
+ 
+  </block>
+</view>

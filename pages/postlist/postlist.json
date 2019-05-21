@@ -1,0 +1,10 @@
+{
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "灌水",
+    "usingComponents": {
+      "wux-cell-group": "../../dist/cell-group/index",
+     
+      "wux-cell": "../../dist/cell/index"
+    }
+}

@@ -1,0 +1,87 @@
+<view class="page">
+   <!-- <view class="page__hd">
+        <view class="page__title">Grid</view>
+        <view class="page__desc">宫格</view>
+    </view>-->
+    <view class="page__bd">
+        <!--<view class="sub-title">Default</view>
+        <wux-grids>
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+        </wux-grids>-->
+      
+       <!-- <view class="sub-title">Bordered = false</view>-->
+        <wux-grids square bordered="{{ false }}">
+            <wux-grid bindtap="onTapClick" data-tapname="postlist" thumb="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTUzNDc4NTQ5ODU0IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9Ijc2OCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwvc3R5bGU+PC9kZWZzPjxwYXRoIGQ9Ik05MTYgOTA3LjJjMCAyNy0yMS45IDQ4LjgtNDguOCA0OC44aC03MTBjLTI3IDAtNDguOC0yMS45LTQ4LjgtNDguOFY0NTkuM2MwLTAuOSAwLTEuNyAwLjEtMi42LTIuNC0yMC41IDQuNy00MS44IDIxLjQtNTcuNUw0NTkuMiA4OC42YzI5LjEtMjcuNSA3Ni4zLTI3LjUgMTA1LjQgMEw4OTQgMzk5LjJjMTUuOCAxNC45IDIzIDM0LjggMjEuNyA1NC4zIDAuMiAxLjkgMC40IDMuOSAwLjQgNS44djQ0Ny45ek02NDAuOSA3NDEuNWMwLTYzLjgtNTMuOS0xMTUuNS0xMjAuNC0xMTUuNXMtMTIwLjQgNTEuNy0xMjAuNCAxMTUuNVY5NTZoMjQwLjdWNzQxLjV6IiBwLWlkPSI3NjkiIGZpbGw9IiNkODFlMDYiPjwvcGF0aD48L3N2Zz4=" label="灌水" />
+            <wux-grid bindtap="onTapClick" data-tapname="boardlist" thumb="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTUzNDgxOTkxNTQ4IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE1ODgiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNODk4LjggODg3LjhINTg1LjFjLTEuMiAzOC41LTMzLjEgNjkuMy03Mi4zIDY5LjMtMzkuMiAwLTcxLjEtMzAuOC03Mi4zLTY5LjNIMTI1LjJjLTIwLjMgMC0yNC45LTE0LjMtMTEtMzAuOWw2My4zLTkyYzAuNC0wLjUgMC44LTAuOSAxLjItMS4zVjQzOWMwLTE1Ni43IDExNy0yODcuMSAyNzEuNS0zMTUuMVY5NS41YzAtMTUuOCAxMi44LTI4LjYgMjguNi0yOC42aDY5LjRjMTUuOCAwIDI4LjYgMTIuOCAyOC42IDI4LjZ2MjguOEM3MzAuNSAxNTMuMiA4NDYuMyAyODMuMSA4NDYuMyA0Mzl2MzI1LjdjMCAwLjEgMC4xIDAuMSAwLjEgMC4ybDYzLjMgOTJjMTMuOSAxNi42IDkuNCAzMC45LTEwLjkgMzAuOXoiIHAtaWQ9IjE1ODkiIGZpbGw9IiMxNDVkZTMiPjwvcGF0aD48L3N2Zz4=" label="公告" />
+            <wux-grid bindtap="onTapClick" thumb="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTUzNDc4NjUzODk4IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjEwODgiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNOTUzLjkgMjIwLjZjLTMuOCA0LjQtOC4zIDguNS0xMy4zIDEyLjFMNTkzLjIgNDc4LjZjMC4yIDIuMSAwLjMgNC4zIDAuMyA2LjQgMCA0NC4yLTM1LjggODAtODAgODBzLTgwLTM1LjgtODAtODBjMC0xLjUgMC4xLTMgMC4xLTQuNUw4My40IDIzMi43Yy01LjEtMy42LTkuNS03LjctMTMuMy0xMi4xLTMuMyA4LjQtNS4xIDE3LjYtNS4xIDI3LjF2NTI4LjVjMCA0MS43IDM0LjEgNzUuNyA3NS43IDc1LjdoNzQyLjVjNDEuNyAwIDc1LjctMzQuMSA3NS43LTc1LjdWMjQ3LjdjMC4xLTkuNS0xLjctMTguNi01LTI3LjF6IiBwLWlkPSIxMDg5IiBmaWxsPSIjMWFmYTI5Ij48L3BhdGg+PHBhdGggZD0iTTkxOC43IDE4MC45Yy0xMC42LTUuNy0yMi42LTguOS0zNS40LTguOUgxNDAuN2MtMTIuOCAwLTI0LjggMy4yLTM1LjQgOC45LTAuMSAwLjQtMC4xIDAuOC0wLjEgMS4xIDAgMyAyLjcgNi43IDcuMSA5LjlsMzQwLjUgMjQxYzE0LjctMTcgMzYuNC0yNy45IDYwLjYtMjcuOSAyMy42IDAgNDQuOSAxMC4zIDU5LjUgMjYuNmwzMzguNy0yMzkuN2M0LjQtMy4xIDcuMS02LjggNy4xLTkuOSAwLjEtMC40IDAuMS0wLjcgMC0xLjF6IiBwLWlkPSIxMDkwIiBmaWxsPSIjMWFmYTI5Ij48L3BhdGg+PC9zdmc+" label="社团大小事" />
+            <wux-grid bindtap="onTapClick" thumb="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTUzNDc4Nzc2MDgyIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE0MTgiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNODgwLjQgNDM2LjljMjMuOS0yMy45IDEwLTY0LjgtMjMuNS02OS4ybC0yMDQuNy0yNi45Yy0xMy4zLTEuNy0yNC45LTkuOS0zMS0yMS45bC05My45LTE4My44Yy0xNS40LTMwLjEtNTguNi0yOS41LTczLjEgMWwtODguOCAxODYuM2MtNS44IDEyLjEtMTcuMSAyMC42LTMwLjQgMjIuN2wtMjAzLjggMzIuNWMtMzMuNCA1LjMtNDYuMiA0Ni42LTIxLjYgNjkuOGwxNDkuOCAxNDJjOS43IDkuMiAxNC4zIDIyLjcgMTIuMiAzNS45bC0zMi4xIDIwMy45Yy01LjMgMzMuNCAzMCA1OC4zIDU5LjcgNDIuMkw0ODAuNSA3NzNjMTEuOC02LjQgMjYtNi42IDM3LjktMC41bDE4NCA5My41YzMwLjEgMTUuMyA2NC43LTEwLjYgNTguNi00My44bC0zNy43LTIwMi45Yy0yLjQtMTMuMiAxLjgtMjYuNyAxMS4yLTM2LjJsMTQ1LjktMTQ2LjJ6IiBwLWlkPSIxNDE5IiBmaWxsPSIjMTMyMjdhIj48L3BhdGg+PHBhdGggZD0iTTY1Ni43IDI4MC43YzM4LjUgNDUuOCAxNDUuNiA1MCAxNDUuNiA1MCAxMS40LTAuNyAxNy0xNC4xIDkuNi0yMi43bC00NS40LTUyLjZjLTMtMy40LTQtOC4xLTIuOS0xMi40bDE3LjUtNjcuMmMyLjktMTEtOC4xLTIwLjUtMTguNi0xNi4xbC02NCAyN2MtNC4yIDEuOC04LjkgMS4zLTEyLjctMS4xTDYyNy4zIDE0OGMtOS42LTYuMS0yMiAxLjQtMjEuMSAxMi43IDAgMC4xIDcuOSA2OS4zIDUwLjUgMTIweiIgcC1pZD0iMTQyMCIgZmlsbD0iIzEzMjI3YSI+PC9wYXRoPjwvc3ZnPg==" label="社团投票" />
+            <wux-grid bindtap="onTapClick" thumb="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTUzNDgyNTMwMjExIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE4NDkiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNzczLjUgNTk1LjVjLTMyLjkgMC01OS45LTI4LjQtNTkuOS02MyAwLTM0LjcgMjYuOS02MyA1OS45LTYzSDk2MXYtNTIuNGMwLTMzLjgtMjYuMi02MS40LTU4LjMtNjEuNEgyNTAuMWMtMzIuMSAwLTU4LjMgMjcuNi01OC4zIDYxLjR2NDI0YzAgMzMuOCAyNi4yIDYxLjQgNTguMyA2MS40aDY1Mi42YzMyLjEgMCA1OC4zLTI3LjYgNTguMy02MS40VjU5NS41SDc3My41eiIgcC1pZD0iMTg1MCIgZmlsbD0iIzIxYmZkNyI+PC9wYXRoPjxwYXRoIGQ9Ik03NzQuNyA1MzIuNW0tNDEgMGE0MSA0MSAwIDEgMCA4MiAwIDQxIDQxIDAgMSAwLTgyIDBaIiBwLWlkPSIxODUxIiBmaWxsPSIjMjFiZmQ3Ij48L3BhdGg+PHBhdGggZD0iTTE1NS40IDM4MC44YzAtMzMuOCAyNy42LTYxLjQgNjEuNC02MS40aDYzMi41bC01My0xNTQuN2MtMTAuOS0zMS45LTQ2LTQ5LjEtNzgtMzguMkwxMDYuNSAzMzYuM2MtMzEuOSAxMC45LTQ5LjEgNDYtMzguMiA3OGw4Ny4xIDI1NC4xVjM4MC44eiIgcC1pZD0iMTg1MiIgZmlsbD0iIzIxYmZkNyI+PC9wYXRoPjwvc3ZnPg==" label="打卡" />
+         
+        
+        </wux-grids>
+
+      <!--  <view class="sub-title">Square = true</view>-->
+        <wux-grids square bordered="{{ false }}">
+              <wux-grid bindtap="onTapClick" thumb="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTUzNDc4NzU3MDU2IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjEyNTIiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNzA2LjIgNzMzLjdjLTMuNCA0LTExNy4xIDE2LjQtMTE3LjEgMTYuNC04LjkgMS41LTE4LTUuNy0xOC41LTE0LjggMCAwLTEyLjYtMTE5LjUtOS4yLTEyMy41bDIyNi44LTI2OS41VjE4Ny45YzAtMjUuMi0yMC42LTQ1LjgtNDUuOC00NS44SDI4NS4zYy0yNS4yIDAtNDUuOCAyMC42LTQ1LjggNDUuOHY2NDUuOWMwIDI1LjIgMjAuNiA0NS44IDQ1LjggNDUuOGg0NTcuMmMyNS4yIDAgNDUuOC0yMC42IDQ1LjgtNDUuOFY2MzYuMmwtODIuMSA5Ny41ek0zMDEuNiAyODAuMmMwLTYuNyA1LjUtMTIuMiAxMi4yLTEyLjJINTY2YzYuNyAwIDEyLjIgNS41IDEyLjIgMTIuMnYzNC4yYzAgNi43LTUuNSAxMi4yLTEyLjIgMTIuMkgzMTMuOGMtNi43IDAtMTIuMi01LjUtMTIuMi0xMi4ydi0zNC4yeiBtMjA2LjIgMjAxLjFjMCA2LjctNS41IDEyLjItMTIuMiAxMi4ySDMxMy44Yy02LjcgMC0xMi4yLTUuNS0xMi4yLTEyLjJ2LTM0LjJjMC02LjcgNS41LTEyLjIgMTIuMi0xMi4yaDE4MS44YzYuNyAwIDEyLjIgNS41IDEyLjIgMTIuMnYzNC4yeiIgcC1pZD0iMTI1MyIgZmlsbD0iI2Q0MjM3YSI+PC9wYXRoPjxwYXRoIGQ9Ik02MDcuNiA3MjEuOGMtNi4zIDEuNS0xMi40LTMuNC0xMi40LTkuOSAwIDAtNC04NS4zLTEuNS04OC4yTDgzOS4yIDMzMmM0LjMtNS4xIDEyLjEtNS44IDE3LjItMS41bDc4LjIgNjUuOGM1LjEgNC4zIDUuOCAxMi4xIDEuNSAxNy4yTDY5MC42IDcwNS4yYy0yLjUgMy04MyAxNi42LTgzIDE2LjZ6IiBwLWlkPSIxMjU0IiBmaWxsPSIjZDQyMzdhIj48L3BhdGg+PC9zdmc+" label="社团管理" />
+           
+        </wux-grids>
+      <!--  <view class="sub-title">Col = 4</view>
+        <wux-grids col="4">
+          
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://wux.cdn.cloverstd.com/logo.png" label="Wux Weapp" />
+        </wux-grids>-->
+        <!--<view class="sub-title">Custom content</view>
+        <wux-grids>
+            <wux-grid>
+                <wux-icon type="logo-github" />
+                <view>Wux Weapp</view>
+            </wux-grid>
+            <wux-grid>
+                <wux-icon type="logo-github" />
+                <view>Wux Weapp</view>
+            </wux-grid>
+            <wux-grid>
+                <wux-icon type="logo-github" />
+                <view>Wux Weapp</view>
+            </wux-grid>
+            <wux-grid>
+                <wux-icon type="logo-github" />
+                <view>Wux Weapp</view>
+            </wux-grid>
+            <wux-grid>
+                <wux-icon type="logo-github" />
+                <view>Wux Weapp</view>
+            </wux-grid>
+            <wux-grid>
+                <wux-icon type="logo-github" />
+                <view>Wux Weapp</view>
+            </wux-grid>
+            <wux-grid>
+                <wux-icon type="logo-github" />
+                <view>Wux Weapp</view>
+            </wux-grid>
+            <wux-grid>
+                <wux-icon type="logo-github" />
+                <view>Wux Weapp</view>
+            </wux-grid>
+            <wux-grid>
+                <wux-icon type="logo-github" />
+                <view>Wux Weapp</view>
+            </wux-grid>
+        </wux-grids>-->
+    </view>
+</view>

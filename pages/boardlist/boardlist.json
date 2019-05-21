@@ -1,0 +1,10 @@
+{
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "社团公告",
+    "usingComponents": {
+      "wux-cell-group": "../../dist/cell-group/index",
+     
+      "wux-cell": "../../dist/cell/index"
+    }
+}

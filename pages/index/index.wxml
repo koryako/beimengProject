@@ -1,0 +1,3 @@
+<!--pages/index/index.wxml-->
+<import src="../../template/views/views.wxml"/>
+<template is="viewWithLeftAndRightImg" data='{{leftImg:"../image/richtext_1.png",title:"富文本编辑器",rightImg:"../image/right.png"}}' />

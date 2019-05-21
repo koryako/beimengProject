@@ -1,0 +1,17 @@
+<view class="page">
+    <view class="page__bd">
+        <wux-cell-group>
+          <block wx:for="{{boardlist}}">
+          
+            <wux-cell bindlongtap="longTap" bindtap='multipleTap' bindtouchstart="touchStart" bindtouchend="touchEnd" data-postid='{{item._id}}' title="{{item.titles}}" is-link label="{{item.author_name}}" extra="{{item.watch_count}}人浏览"></wux-cell>
+          
+          </block>
+        </wux-cell-group>
+        
+    </view>
+</view>
+
+<!--TODO 如何使用MinUI提供的组件库-->
+<image wx:if='{{showOrHiddenNewPost}}' bindtap="chooseimage" class="moment_img new_post" bindtap="newPost" src='../../images/newPost.png'></image>
+<!-- 需要使用 button 来授权登录 -->
+

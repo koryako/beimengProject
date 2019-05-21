@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "前端特搜队",
+    "usingComponents": {
+        "wux-icon": "../../dist/icon/index",
+        "wux-grids": "../../dist/grids/index",
+        "wux-grid": "../../dist/grid/index"
+    }
+}

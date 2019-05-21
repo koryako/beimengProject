@@ -1,0 +1,12 @@
+{
+    "navigationBarTitleText": "我的",
+    "usingComponents": {
+        "wux-cell-group": "../../../dist/cell-group/index",
+        "wux-cell": "../../../dist/cell/index",
+        "wux-rater": "../../../dist/rater/index",
+        "wux-input": "../../../dist/input/index",
+        "wux-cascader": "../../../dist/cascader/index",
+        "wux-select": "../../../dist/select/index",
+        "wux-button": "../../../dist/button/index"
+    }
+}

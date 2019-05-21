@@ -1,0 +1,37 @@
+
+  <view class="page">
+ <wux-cell-group title="您的个人信息">
+           
+            <wux-cell title="等级" hover-class="none">
+                <wux-rater slot="footer" value="{{ ratervalue }}" controlled disable/>
+            </wux-cell>
+            <wux-cell hover-class="none">
+                <wux-input label="姓名" placeholder="输入您的真实姓名" bind:change="onChangeRealname" value="{{ realname }}" controlled/>
+            </wux-cell>
+            <wux-cell hover-class="none">
+                <wux-input label="QQ" placeholder="输入您的QQ号码" value="{{ qqvalue }}" bind:change="onChangeQqvalue" controlled/>
+            </wux-cell>
+          <!--  <wux-cell hover-class="none">
+                <wux-input label="Password" placeholder="Input your password" password type="number" />
+            </wux-cell>-->
+          <wux-cell hover-class="none">
+                <wux-input label="手机号码" placeholder="请输入您的手机号码" value="{{ value }}" controlled error="{{ error }}" type="number" bind:change="onChange" bind:focus="onFocus" bind:blur="onBlur" bind:confirm="onConfirm" bind:clear="onClear" bind:error="onError" />
+            </wux-cell>
+        </wux-cell-group>
+        <wux-cell title="所在地区" extra="{{ title2 }}" bind:click="onOpen2"></wux-cell>
+       <!--  <wux-cell title="所在地区" extra="{{ title1 }}" bind:click="onOpen1"></wux-cell>-->
+         <wux-cell title="街道" extra="{{ title3 }}" bind:click="onClick2"></wux-cell>
+         <wux-cell title="小区" extra="{{ title1 }}" bind:click="onClick1"></wux-cell>
+          <wux-cell hover-class="none">
+                <wux-input label="详细地址" placeholder="输入详细地址" value="{{ address }}" bind:change="onChangeAddress" controlled />
+            </wux-cell>
+            <wux-button block type="balanced" bindtap="save" wx:if="{{ !visible3 }}">保存</wux-button>
+             <wux-button block type="balanced" bindtap="modify" wx:if="{{ visible3 }}">修改</wux-button>
+    
+</view>
+<wux-select id="wux-select1" />
+<wux-select id="wux-select2" />
+
+<wux-cascader visible="{{ visible1 }}" default-value="{{ value1 }}" title="所在地区" options="{{ options1 }}" bind:close="onClose1" bind:change="onChange1" />
+<wux-cascader visible="{{ visible2 }}" controlled value="{{ value2 }}" title="所在地区" options="{{ options2 }}" bind:close="onClose2" bind:change="onChange2" bind:load="onLoadOptions" />
+ 

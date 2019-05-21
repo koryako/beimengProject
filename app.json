@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/grid/grid",
+    "pages/richtext/richtext",
+    "pages/richtextDetail/richtextDetail",
+    "pages/postlist/postlist",
+    "pages/boardlist/boardlist",
+    "pages/logs/logs",
+    "pages/publish/publish",
+    "pages/publishedit/publishedit",
+    "pages/postdetail/postdetail",
+    "pages/authorize/authorize",
+    "pages/my/about/about"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#00BFFF",
+    "navigationBarTitleText": "前端特搜队",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#00BFFF",
+    "list": [
+      {
+        "pagePath": "pages/grid/grid",
+        "text": "首页",
+        "iconPath":"pages/images/home.png",
+        "selectedIconPath":"pages/images/home_c.png"
+      },
+      {
+        "pagePath": "pages/my/about/about",
+        "text": "我的",
+        "iconPath":"pages/images/my.png",
+        "selectedIconPath":"pages/images/my_c.png"
+      }
+    ]
+  },
+
+  "cloud": true
+}
