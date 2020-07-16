@@ -13,13 +13,12 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.4.0",
 	"appid": "wxc5a9e177b6fe66a6",
-	"projectname": "RssHub",
+	"projectname": "beimengProject",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-  "cloudfunctionRoot": "cloud-functions/",
+	"cloudfunctionRoot": "cloud-functions/",
 	"isGameTourist": false,
-
 	"condition": {
 		"search": {
 			"current": -1,
